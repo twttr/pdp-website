@@ -3,6 +3,8 @@ name: Deploy
 on:
   push:
     branches: [main, develop]
+  repository_dispatch:
+    types: [cv-updated]
 
 jobs:
   deploy:
@@ -11,6 +13,26 @@ jobs:
       - uses: actions/checkout@v4
         with:
           submodules: true
+
+      - name: Checkout CV source
+        uses: actions/checkout@v4
+        with:
+          repository: twttr/twttr-vault
+          token: ${{ secrets.VAULT_PAT }}
+          path: vault
+          sparse-checkout: |
+            Data/Work/cv/ios/v2
+
+      - name: Build CV PDF
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: ios_cv.tex
+          working_directory: vault/Data/Work/cv/ios/v2
+
+      - name: Copy CV to static
+        run: |
+          mkdir -p static/downloads
+          cp vault/Data/Work/cv/ios/v2/ios_cv.pdf static/downloads/cv.pdf
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3

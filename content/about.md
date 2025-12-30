@@ -21,6 +21,10 @@ Beyond mobile, I build full-stack solutions: backend services, web frontends, an
 - Preact, Vite
 - webOS TV development
 
+## Resume
+
+[Download CV (PDF)](/downloads/cv.pdf)
+
 ## Get in Touch
 
 - GitHub: [github.com/twttr](https://github.com/twttr)
