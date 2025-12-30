@@ -1,0 +1,59 @@
+baseURL = 'https://me.twttr.io/'
+languageCode = 'en-us'
+title = 'twttr.io'
+theme = 'PaperMod'
+
+[params]
+defaultTheme = "auto"
+showShareButtons = false
+showReadingTime = false
+showBreadCrumbs = false
+showPostNavLinks = false
+showCodeCopyButtons = true
+disableSpecial1stPost = true
+
+[params.profileMode]
+enabled = true
+title = "Hey, I'm twttr"
+subtitle = "Software Engineer specializing in iOS & macOS development. Also building backends, frontends, and webOS apps."
+imageUrl = "images/profile.jpg"
+imageWidth = 150
+imageHeight = 150
+
+[[params.profileMode.buttons]]
+name = "Projects"
+url = "/projects/"
+
+[[params.profileMode.buttons]]
+name = "About"
+url = "/about/"
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/twttr"
+
+[[params.socialIcons]]
+name = "linkedin"
+url = "https://linkedin.com/in/twttr"
+
+[menu]
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Projects"
+url = "/projects/"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about/"
+weight = 3
+
+[outputs]
+home = ["HTML", "RSS"]
+
+[markup.goldmark.renderer]
+unsafe = true
