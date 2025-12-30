@@ -20,6 +20,7 @@ jobs:
           repository: twttr/twttr-vault
           token: ${{ secrets.VAULT_PAT }}
           path: vault
+          lfs: true
           sparse-checkout: |
             Data/Work/cv/ios/v2
 
