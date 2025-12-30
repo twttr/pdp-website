@@ -1,6 +1,9 @@
 ---
 title: "About"
 layout: "single"
+ShowToc: false
+ShowReadingTime: false
+comments: false
 ---
 
 I'm a Software Engineer with a focus on Apple platforms — iOS and macOS development using Swift and SwiftUI.

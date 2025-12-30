@@ -1,6 +1,9 @@
 ---
 title: "Projects"
 layout: "single"
+ShowToc: false
+ShowReadingTime: false
+comments: false
 ---
 
 A selection of personal projects I've built and maintain.
