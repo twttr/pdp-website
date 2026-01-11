@@ -12,6 +12,13 @@ A selection of personal projects I've built and maintain.
 
 ## KPuppy
 
+{{< gallery >}}
+/images/projects/kpuppy/screen1.png
+/images/projects/kpuppy/screen2.png
+/images/projects/kpuppy/screen3.png
+/images/projects/kpuppy/screen4.png
+{{< /gallery >}}
+
 A lightweight webOS LG TV app for KinoPub online cinema.
 
 - Netflix-style dark UI optimized for TV remote navigation
@@ -42,6 +49,13 @@ Lightweight comments API with WebSocket support. Backend service for the KPuppy 
 ---
 
 ## Blurry
+
+{{< gallery >}}
+/images/projects/blurry/screen1.png
+/images/projects/blurry/screen2.png
+/images/projects/blurry/screen3.png
+/images/projects/blurry/screen4.png
+{{< /gallery >}}
 
 A macOS menu bar utility for creating blur, darken, or picture overlay effects on specific screen areas.
 
