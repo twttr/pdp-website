@@ -17,7 +17,7 @@ Beyond mobile, I build full-stack solutions: backend services, web frontends, an
 - Xcode, Instruments, XCTest
 
 **Backend**
-- Node.js, TypeScript
+- Go, TypeScript
 - REST APIs, WebSockets
 
 **Frontend & Other**

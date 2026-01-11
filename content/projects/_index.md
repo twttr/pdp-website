@@ -35,7 +35,7 @@ Lightweight comments API with WebSocket support. Backend service for the KPuppy 
 - RESTful API endpoints
 - CI/CD with GitHub Actions
 
-**Tech Stack:** Node.js, TypeScript
+**Tech Stack:** Go, Echo
 
 [GitHub →](https://github.com/twttr/kpuppy-backend)
 
