@@ -69,3 +69,19 @@ A macOS menu bar utility for creating blur, darken, or picture overlay effects o
 **Tech Stack:** Swift, SwiftUI, macOS 12+
 
 [GitHub →](https://github.com/twttr/blurry)
+
+---
+
+## Mirroreu
+
+A lightweight macOS menu bar app that enables iPhone Mirroring in the EU by modifying system eligibility settings.
+
+- One-click toggle to enable or disable iPhone Mirroring from the menu bar
+- Automatic persistence via a privileged helper daemon
+- Full Disk Access detection with setup guidance
+- Localized in 23 languages
+- Menu bar app (no dock icon)
+
+**Tech Stack:** Swift, SwiftUI, macOS 15.2+
+
+[GitHub →](https://github.com/twttr/mirroreu)
