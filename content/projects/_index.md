@@ -85,3 +85,22 @@ A lightweight macOS menu bar app that enables iPhone Mirroring in the EU by modi
 **Tech Stack:** Swift, SwiftUI, macOS 15.2+
 
 [GitHub →](https://github.com/twttr/mirroreu)
+
+---
+
+## Multi-Product Comparator
+
+{{< gallery >}}
+/images/projects/multi-product-comparator/screen1.png
+{{< /gallery >}}
+
+Chrome extension that highlights shops carrying all your selected products on price comparison sites.
+
+- Add products to a compare list from any supported product page
+- Shops stocking all selected items are highlighted in green
+- Supports idealo, Geizhals, billiger.de, guenstiger.de across multiple countries
+- Localized UI matching each domain's language (German, English, French, Spanish, Italian, Polish)
+
+**Tech Stack:** TypeScript, esbuild, Chrome Extension Manifest V3, Vitest
+
+[GitHub →](https://github.com/twttr/multi-product-comparator)
