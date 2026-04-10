@@ -104,3 +104,6 @@ keys = ["title", "permalink", "summary", "content"]
 
 [markup.goldmark.renderer]
 unsafe = true
+
+[author]
+name = "twttr"
