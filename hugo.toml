@@ -7,6 +7,7 @@ theme = 'PaperMod'
 posts = '/posts/:year/:slug/'
 
 [params]
+author = "twttr"
 defaultTheme = "auto"
 showShareButtons = false
 showReadingTime = true
@@ -104,6 +105,3 @@ keys = ["title", "permalink", "summary", "content"]
 
 [markup.goldmark.renderer]
 unsafe = true
-
-[author]
-name = "twttr"
