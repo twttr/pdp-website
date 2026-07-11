@@ -2,9 +2,7 @@ baseURL = 'https://me.twttr.io/'
 languageCode = 'en-us'
 title = 'twttr.io'
 theme = 'PaperMod'
-
-[permalinks]
-posts = '/posts/:year/:slug/'
+disableKinds = ["RSS", "taxonomy", "term"]
 
 [params]
 author = "twttr"
@@ -15,22 +13,7 @@ showBreadCrumbs = false
 showPostNavLinks = true
 showCodeCopyButtons = true
 showToc = true
-comments = true
 disableSpecial1stPost = true
-
-[params.giscus]
-repo = "twttr/pdp-website"
-repoID = "R_kgDOQxFy9A"
-category = "Comments"
-categoryID = "DIC_kwDOQxFy9M4C0Z5b"
-mapping = "pathname"
-strict = "1"
-reactionsEnabled = "1"
-emitMetadata = "0"
-inputPosition = "top"
-theme = "preferred_color_scheme"
-lang = "en"
-loading = "lazy"
 
 [params.profileMode]
 enabled = true
@@ -43,10 +26,6 @@ imageHeight = 150
 [[params.profileMode.buttons]]
 name = "Projects"
 url = "/projects/"
-
-[[params.profileMode.buttons]]
-name = "Posts"
-url = "/posts/"
 
 [[params.profileMode.buttons]]
 name = "About"
@@ -67,32 +46,22 @@ url = "/"
 weight = 1
 
 [[menu.main]]
-name = "Posts"
-url = "/posts/"
-weight = 2
-
-[[menu.main]]
-name = "Tags"
-url = "/tags/"
-weight = 3
-
-[[menu.main]]
 name = "Search"
 url = "/search/"
-weight = 4
+weight = 2
 
 [[menu.main]]
 name = "Projects"
 url = "/projects/"
-weight = 5
+weight = 3
 
 [[menu.main]]
 name = "About"
 url = "/about/"
-weight = 6
+weight = 4
 
 [outputs]
-home = ["HTML", "RSS", "JSON"]
+home = ["HTML", "JSON"]
 
 [params.fuseOpts]
 isCaseSensitive = false
