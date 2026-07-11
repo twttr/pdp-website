@@ -23,14 +23,6 @@ imageUrl = "images/profile.jpg"
 imageWidth = 150
 imageHeight = 150
 
-[[params.profileMode.buttons]]
-name = "Projects"
-url = "/projects/"
-
-[[params.profileMode.buttons]]
-name = "About"
-url = "/about/"
-
 [[params.socialIcons]]
 name = "github"
 url = "https://github.com/twttr"
@@ -39,38 +31,8 @@ url = "https://github.com/twttr"
 name = "linkedin"
 url = "https://linkedin.com/in/twttr"
 
-[menu]
-[[menu.main]]
-name = "Home"
-url = "/"
-weight = 1
-
-[[menu.main]]
-name = "Search"
-url = "/search/"
-weight = 2
-
-[[menu.main]]
-name = "Projects"
-url = "/projects/"
-weight = 3
-
-[[menu.main]]
-name = "About"
-url = "/about/"
-weight = 4
-
 [outputs]
-home = ["HTML", "JSON"]
-
-[params.fuseOpts]
-isCaseSensitive = false
-shouldSort = true
-location = 0
-distance = 1000
-threshold = 0.4
-minMatchCharLength = 0
-keys = ["title", "permalink", "summary", "content"]
+home = ["HTML"]
 
 [markup.goldmark.renderer]
 unsafe = true
