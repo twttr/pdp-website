@@ -6,9 +6,19 @@ on:
   repository_dispatch:
     types: [cv-updated]
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -41,12 +51,8 @@ jobs:
       - name: Build
         run: hugo --minify
 
-      - name: Deploy
-        uses: burnett01/rsync-deployments@6.0.0
+      - uses: actions/upload-pages-artifact@v3
         with:
-          switches: -avz --delete
-          path: public/
-          remote_path: /var/www/portfolio/
-          remote_host: ${{ secrets.VPS_HOST }}
-          remote_user: ${{ secrets.VPS_USER }}
-          remote_key: ${{ secrets.VPS_SSH_KEY }}
+          path: public
+      - id: deployment
+        uses: actions/deploy-pages@v4
